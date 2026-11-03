@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#11152b"><title>I'm Sorry, Jhalak ♡</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap');
+:root{--bg:#10152b;--ink:#f7eff7;--muted:#c8bfd3;--pink:#f0a9c8}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 15% 15%,#30345d 0,transparent 38%),radial-gradient(ellipse at 85% 80%,#492d52 0,transparent 36%),var(--bg);color:var(--ink);font-family:'DM Sans',sans-serif;min-height:100vh;overflow-x:hidden}
+#sky{position:fixed;inset:0;pointer-events:none;overflow:hidden}#sky i{position:absolute;width:3px;height:3px;border-radius:50%;background:white;opacity:.6;box-shadow:0 0 12px white;animation:twinkle 3s infinite alternate}@keyframes twinkle{to{opacity:.15;transform:scale(.55)}}
+main{position:relative;width:min(760px,calc(100% - 32px));margin:auto;padding:55px 0}.top{text-align:center;margin-bottom:24px;color:var(--pink);font-size:.72rem;letter-spacing:.24em;text-transform:uppercase}
+.card{border:1px solid #ffffff24;background:linear-gradient(145deg,#ffffff1b,#ffffff09);backdrop-filter:blur(15px);border-radius:28px;padding:clamp(26px,6vw,58px);box-shadow:0 25px 90px #05071470}
+h1,h2{font-family:'Playfair Display',serif;font-weight:500}h1{font-size:clamp(2.7rem,8vw,5rem);line-height:1.05;text-align:center;margin:8px 0 16px}h1 em{color:var(--pink)}
+.subtitle{text-align:center;color:var(--muted);line-height:1.8;max-width:520px;margin:0 auto 34px}.divider{text-align:center;color:var(--pink);margin:28px 0}
+.letter{font-size:1rem;line-height:1.95;color:#eee5f0}.letter p{margin:0 0 18px}.letter strong{color:#ffd2e4}
+.promise{margin:30px 0;padding:22px;border:1px solid #f0a9c855;border-radius:18px;background:#f0a9c80d;text-align:center}.promise .big{font-family:'Playfair Display',serif;font-size:clamp(1.35rem,4vw,2rem);color:#ffd5e6;line-height:1.4}.promise small{display:block;color:var(--muted);margin-top:10px;line-height:1.6}
+.actions{text-align:center;margin-top:32px}.btn{border:0;border-radius:999px;padding:14px 24px;background:linear-gradient(110deg,#efabc9,#c6b9f2);color:#21182d;font:700 .95rem 'DM Sans';cursor:pointer;transition:transform .2s}.btn:hover{transform:translateY(-2px)}
+.reveal{display:none;margin-top:22px;padding:20px;border-radius:16px;background:#ffffff0b;color:#f5e9f3;line-height:1.8;text-align:center}.reveal.show{display:block;animation:appear .5s ease}@keyframes appear{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.sign{text-align:right;color:var(--pink);font-family:'Playfair Display',serif;font-size:1.35rem;font-style:italic;margin-top:26px}.footer{text-align:center;color:#aaa2ba;font-size:.76rem;margin-top:24px;letter-spacing:.08em}
+@media(max-width:520px){main{padding:28px 0}.card{border-radius:22px}.letter{font-size:.96rem}}
+</style></head>
+<body><div id="sky" aria-hidden="true"></div><main>
+<div class="top">a little page, just for you · ♡</div>
+<section class="card">
+<div style="text-align:center;color:var(--pink);font-size:1.5rem">✦</div>
+<h1>I'm sorry,<br><em>Jhalak.</em></h1>
+<p class="subtitle">I wanted to say this properly, without making excuses or expecting anything from you.</p>
+<div class="divider">♡</div>
+<div class="letter">
+<p>Meriii pyari Jhalak,</p>
+<p>I'm genuinely sorry for taking screenshots. I understand that it can make you feel like your privacy isn't being respected, and I should have thought about that before doing it.</p>
+<p>I don't want you to feel like you have to be careful around me or wonder whether something you share will be saved. <strong>You deserve to feel comfortable, respected, and safe with me.</strong></p>
+<p>I'm not going to brush it off, make excuses, or ask you to forget about it instantly. I know that saying sorry matters much less if my actions don't change.</p>
+<p>So I'm making you a clear promise:</p>
+</div>
+<div class="promise"><div class="big">I won't take screenshots of you or our conversations without your permission. ♡</div><small>And if I'm ever unsure whether something is okay to save, I'll ask first. Your privacy comes before a picture or a memory.</small></div>
+<div class="letter">
+<p>I care about you, and I want to earn your trust through what I do from now on — not just through a pretty website or a paragraph.</p>
+<p>You don't have to forgive me on the spot. I just wanted you to know that I understand why this matters, that I'm sorry, and that I'll respect this boundary.</p>
+<p>I'm sorry, cutie. I love you, and I'll do better. 🫶🏻</p>
+</div>
+<div class="sign">— your ghonchu ♡</div>
+<div class="actions"><button class="btn" id="btn">One more thing…</button><div class="reveal" id="reveal">No pressure to reply to this page or make me feel better. I just wanted to take responsibility. I'll show you I mean it by respecting your privacy, consistently. ♡</div></div>
+</section><div class="footer">NO EXCUSES · JUST RESPECT · ALWAYS ♡</div></main>
+<script>
+const sky=document.getElementById('sky');for(let i=0;i<75;i++){const s=document.createElement('i');s.style.left=Math.random()*100+'%';s.style.top=Math.random()*100+'%';s.style.animationDelay=Math.random()*3+'s';sky.appendChild(s)}
+document.getElementById('btn').addEventListener('click',()=>{const r=document.getElementById('reveal');r.classList.toggle('show');document.getElementById('btn').textContent=r.classList.contains('show')?'♡':'One more thing…'});
+</script></body></html>
